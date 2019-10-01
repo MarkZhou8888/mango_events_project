@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>Community Events Board</title>
+    </head>
+    <body>
+      <h1>Community Events Board</h1>
+      <div class="event-list">
+        <ul>
+          {% for event in events %}
+            <li>{{ event.name }} - {{ event.data }}</li>
+          {% endfor %}
+        </ul>
+        <a href='/input'>Add your own event to the database!</a>
+      </div>
+    </body>
+</html>
