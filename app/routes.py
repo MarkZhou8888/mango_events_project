@@ -27,6 +27,7 @@ mongo = PyMongo(app)
 def index():
     #connect to database
     connect = mongo.db.events
+    #connect.delete_many({})
     #query the database to get all of the events
     events = list(connect.find({}))
     print(events)

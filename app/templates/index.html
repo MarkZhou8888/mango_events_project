@@ -1,16 +1,16 @@
 <html>
     <head>
-        <title>Community Events Board</title>
+        <title>Phone Book</title>
     </head>
     <body>
-      <h1>Community Events Board</h1>
+      <h1>Phone Book</h1>
       <div class="event-list">
         <ul>
           {% for event in events %}
             <li>{{ event.name }} - {{ event.data }}</li>
           {% endfor %}
         </ul>
-        <a href='/input'>Add your own event to the database!</a>
+        <a href='/input'>Add your phone number to the phone book!</a>
       </div>
     </body>
 </html>
